@@ -45,4 +45,13 @@ fun main () {
     } else {
         points += 1
     }
+
+    when(points) {
+        in 0..59 -> println("You received: F")
+        in 60..69 -> println("You received: E")
+        in 70..79 -> println("You received: D")
+        in 80..89 -> println("You received: C")
+        in 90..99 -> println("You received: B")
+        in 100..110 -> println("You received: A")
+    }
 }
